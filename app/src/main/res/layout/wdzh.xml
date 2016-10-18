@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#FF6633">
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:layout_width="35dp"
+            android:src="@mipmap/back"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="我的账户" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@id/title"
+        android:id="@+id/iv"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:src="@mipmap/cadr_no"
+        android:layout_height="100dp" />
+</RelativeLayout>

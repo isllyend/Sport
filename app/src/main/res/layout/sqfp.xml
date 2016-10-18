@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#d2d2d2"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/fp_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#FF6633">
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:layout_width="35dp"
+            android:src="@mipmap/back"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="申请发票" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/fp_btnok"
+        android:layout_margin="10dp"
+        android:layout_below="@id/forget_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="确认"
+        android:layout_alignParentBottom="true"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="@drawable/roundbutton"/>
+    <ScrollView
+        android:layout_below="@id/fp_title"
+        android:layout_width="match_parent"
+        android:layout_above="@id/fp_btnok"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/highmoney"
+            android:layout_width="match_parent"
+            android:text="最高可开金额0元"
+            android:textColor="#FF6633"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ykmoney"
+            android:layout_below="@id/highmoney"
+            android:layout_width="match_parent"
+            android:text="已开金额0元"
+            android:textColor="#FF6633"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_below="@id/ykmoney"
+            android:id="@+id/fp_line1"
+            android:background="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="发票额度(元)"
+                android:layout_width="0dp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fp_count"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/fp_line1"
+            android:id="@+id/fp_line2"
+            android:background="#fff"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="发票抬头"
+                android:layout_width="0dp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fp_nickname"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/fp_line2"
+            android:id="@+id/fp_line3"
+            android:background="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="收件人"
+                android:layout_width="0dp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fp_getperson"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/fp_line3"
+            android:id="@+id/fp_line4"
+            android:background="#fff"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="手机号"
+                android:layout_width="0dp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fp_phone"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/fp_line4"
+            android:id="@+id/fp_line5"
+            android:background="#fff"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="收件地址"
+                android:layout_width="0dp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fp_address"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/fp_tv1"
+            android:layout_margin="10dp"
+            android:layout_below="@id/fp_line5"
+            android:textColor="#FF6633"
+            android:layout_width="match_parent"
+            android:text="注:发票收取快递费5元"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fp_tv2"
+            android:layout_below="@id/fp_tv1"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="请选择快递费支付方式"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:layout_below="@id/fp_tv2"
+            android:id="@+id/fp_line6"
+            android:background="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/weixin_icon"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:text="微信支付"
+                android:layout_width="0dp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/fp_weixin_state"
+                android:layout_width="20dp"
+                android:layout_margin="20dp"
+                android:src="@mipmap/balence_gou"
+                android:layout_gravity="center"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/fp_line6"
+            android:id="@+id/fp_line7"
+            android:background="#fff"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/zhifubao"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:text="支付宝支付"
+                android:layout_width="0dp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/fp_zhifubao_state"
+                android:layout_width="20dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/fp_tv3"
+            android:layout_margin="10dp"
+            android:layout_below="@id/fp_line7"
+            android:layout_width="match_parent"
+            android:text="1.线上申请的可开额度自2016年1月1日起开始累计，如需开前期的发票请联系客服"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fp_tv4"
+            android:layout_margin="10dp"
+            android:layout_below="@id/fp_tv3"
+            android:layout_width="match_parent"
+            android:text="2.我们收到您的申请后，会在15个工作日内处理，如急需，请联系客服"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/fp_tv4"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="3.客服电话 :"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignBottom="@id/tv2"
+            android:layout_toRightOf="@id/tv2"
+            android:textColor="#FF6633"
+            android:layout_width="wrap_content"
+            android:text=" 400-921-6990"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#FF6633">
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:layout_width="35dp"
+            android:src="@mipmap/back"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:text="我的积分" />
+        <RelativeLayout
+            android:layout_below="@id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/creditsround"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/aaa"
+                android:layout_width="wrap_content"
+              android:text="当前积分"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/jifen"
+                android:layout_below="@id/aaa"
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:textColor="#FF6633"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+               android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@id/jifen"
+                android:layout_width="wrap_content"
+                android:text="分"
+                android:gravity="center"
+                android:layout_alignBottom="@id/jifen"
+                android:textColor="#FF6633"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_duihuan"
+                android:layout_below="@id/jifen"
+                android:layout_width="match_parent"
+                android:text="积分兑换商品"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:background="@drawable/roundbutton"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/credits_line1"
+            android:layout_width="wrap_content"
+            android:text="Q1:怎么获得积分?"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/credits_line2"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="1.订单奖励"
+            android:layout_below="@id/credits_line1"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/credits_line3"
+            android:layout_width="wrap_content"
+            android:text="在线支付的订单完成后讲获得订单积分奖励。"
+            android:layout_below="@id/credits_line2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/credits_line4"
+            android:layout_width="wrap_content"
+            android:text="线下场馆卡打卡消费后完成的订单也将获得积分奖励。"
+            android:layout_below="@id/credits_line3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/credits_line5"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="可获得积分=订单金额*1(即1元=1积分)。"
+            android:layout_below="@id/credits_line4"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/credits_line6"
+            android:layout_width="wrap_content"
+            android:text="2.打卡奖励"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/credits_line5"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/credits_line7"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="全名健身卡线下打卡运动将会获得积分奖励。"
+            android:layout_below="@id/credits_line6"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/credits_line8"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:text="每次打卡将会获得1积分。"
+            android:layout_below="@id/credits_line7"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_margin="10dp"
+            android:layout_below="@id/credits_line8"
+            android:layout_width="match_parent"
+            android:src="@mipmap/line_style2"
+            android:layout_marginTop="5dp"
+            android:layout_height="2dp" />
+        <TextView
+            android:id="@+id/credits_line9"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/line2"
+            android:text="Q2:积分能用来做什么?"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/credits_line10"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="● 积分可以在积分商城中兑换各种礼品。"
+            android:layout_below="@id/credits_line9"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/credits_line11"
+            android:layout_width="wrap_content"
+            android:text="● 作为评选运动达人的依据。"
+            android:layout_below="@id/credits_line10"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/credits_line12"
+            android:layout_margin="10dp"
+            android:layout_below="@id/credits_line11"
+            android:layout_width="match_parent"
+            android:src="@mipmap/line_style2"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/credits_line13"
+            android:layout_width="wrap_content"
+            android:text="如有其它问题请致电客服:400-921-6990。"
+            android:layout_below="@id/credits_line12"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

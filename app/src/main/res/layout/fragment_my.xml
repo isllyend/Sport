@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF6633">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="29dp"
+        android:gravity="center"
+        android:text="个人中心"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/title"
+        >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/defaulthead" />
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="未登录"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_othersinfo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/icon"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/my_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号余额"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#fff" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/my_fapiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可开发票金额"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#fff" />
+        <LinearLayout
+            android:id="@+id/llmy_credits"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/my_credits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的积分"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_below="@id/ll_othersinfo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.qf.administrator.sports.modules.my.activity.My_item
+                android:id="@+id/wdzl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_left="@mipmap/self"
+                app:img_right="@mipmap/title_right_ben_seler"
+                app:text_title="我的资料" />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#C0C0C0"/>
+            <com.qf.administrator.sports.modules.my.activity.My_item
+                android:id="@+id/ddcx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_left="@mipmap/oder"
+                app:img_right="@mipmap/title_right_ben_seler"
+                app:text_title="订单查询" />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#C0C0C0"/>
+            <com.qf.administrator.sports.modules.my.activity.My_item
+                android:id="@+id/mykp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_left="@mipmap/mycard"
+                app:img_right="@mipmap/title_right_ben_seler"
+                app:text_title="我的卡片" />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#C0C0C0"/>
+            <com.qf.administrator.sports.modules.my.activity.My_item
+                android:id="@+id/ydgj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_left="@mipmap/foot"
+                app:img_right="@mipmap/title_right_ben_seler"
+                app:text_title="运动轨迹" />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#C0C0C0"/>
+            <com.qf.administrator.sports.modules.my.activity.My_item
+                android:id="@+id/sqfp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_left="@mipmap/apply_fapiao"
+                app:img_right="@mipmap/title_right_ben_seler"
+                app:text_title="申请发票" />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#C0C0C0"/>
+            <com.qf.administrator.sports.modules.my.activity.My_item
+                android:id="@+id/myss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_left="@mipmap/event_bg"
+                app:img_right="@mipmap/title_right_ben_seler"
+                app:text_title="我的赛事" />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#C0C0C0"/>
+            <com.qf.administrator.sports.modules.my.activity.My_item
+                android:id="@+id/tzbg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_left="@mipmap/tizhi_bg"
+                app:img_right="@mipmap/title_right_ben_seler"
+                app:text_title="体质报告" />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#C0C0C0"/>
+            <com.qf.administrator.sports.modules.my.activity.My_item
+                android:id="@+id/settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img_left="@mipmap/setting"
+                app:img_right="@mipmap/title_right_ben_seler"
+                app:text_title="设置" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

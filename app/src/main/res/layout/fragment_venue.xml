@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E1E1">
+
+
+    <RelativeLayout
+        android:id="@+id/venue_rl"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="24dp"
+        android:background="#FF6633">
+
+        <LinearLayout
+            android:id="@+id/venue_ll"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="64dp"
+                android:layout_height="42dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="上海市"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_venue_left"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/up" />
+
+            <LinearLayout
+
+                android:layout_width="236dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/input"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/venue_iv_search"
+                    android:layout_width="26dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:src="@mipmap/search_v" />
+
+                <EditText
+                    android:id="@+id/et_venue_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="输入场馆名称"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_venue_right"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="4dp"
+                android:src="@mipmap/ic_action" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_venue_xm"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@id/venue_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="网球"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/venue_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/venue_rl"></android.support.v4.view.ViewPager>
+
+    <HorizontalScrollView
+        android:id="@+id/venue_sv"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="116dp">
+
+        <LinearLayout
+            android:id="@+id/venue_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/venue_iv_wq"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:clickable="true"
+                android:src="@mipmap/wq" />
+
+            <ImageView
+                android:id="@+id/venue_iv_ymq"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:clickable="true"
+                android:src="@mipmap/ymq" />
+
+            <ImageView
+                android:id="@+id/venue_iv_zq"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:clickable="true"
+                android:src="@mipmap/zq" />
+
+            <ImageView
+                android:id="@+id/venue_iv_ppq"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:clickable="true"
+                android:src="@mipmap/ppq" />
+
+            <ImageView
+                android:id="@+id/venue_iv_lq"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:clickable="true"
+                android:src="@mipmap/lq" />
+
+            <ImageView
+                android:id="@+id/venue_iv_zhq"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:clickable="true"
+                android:src="@mipmap/zhq" />
+
+            <ImageView
+                android:id="@+id/venue_iv_hl"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:clickable="true"
+                android:src="@mipmap/hanb" />
+
+            <ImageView
+                android:id="@+id/venue_iv_sj"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:clickable="true"
+                android:src="@mipmap/sj" />
+
+            <ImageView
+                android:id="@+id/venue_iv_py"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:clickable="true"
+                android:src="@mipmap/py" />
+
+            <ImageView
+                android:id="@+id/venue_iv_yy"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:clickable="true"
+                android:src="@mipmap/yy" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/venue_ll02"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/venue_viewpager"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+
+            >
+
+            <TextView
+                android:id="@+id/venue_tv_quyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="区域"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+
+            >
+
+            <TextView
+                android:id="@+id/venue_tv_shaixuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="筛选"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+
+            >
+
+            <TextView
+                android:id="@+id/venue_tv_paixu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="智能排序"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/venue_reflash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/venue_ll02">
+
+        <ListView
+            android:id="@+id/venue_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/venue_ll02"></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/venue_ll03"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="310dp"
+        android:background="#E1E1E1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/venue_tv_xzq"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="行政区"
+            android:textSize="14sp" />
+
+        <ListView
+            android:id="@+id/venue_area_listview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"></ListView>
+    </LinearLayout>
+
+</RelativeLayout>

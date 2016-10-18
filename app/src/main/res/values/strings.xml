@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InsistRun</string>
+    <string name="titleA">赛事报名</string>
+    <string name="titleB">NBA赛事</string>
+    <string name="titleC">新闻大爆炸</string>
+    <string name="titleD">足球赛事</string>
+</resources>

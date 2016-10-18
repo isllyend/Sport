@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qf.administrator.sports">
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <application
+        android:name=".XutilsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.venue.activity.CityActivity"/>
+        <activity android:name="com.qf.administrator.sports.modules.my.activity.Login"></activity>
+        <activity android:name="com.qf.administrator.sports.modules.my.activity.Register"></activity>
+        <activity android:name="com.qf.administrator.sports.modules.my.activity.Forgetpwd"></activity>
+        <activity android:name=".modules.my.activity.Wdzl"></activity>
+        <activity android:name=".modules.my.activity.Ddcx"></activity>
+        <activity android:name=".modules.my.activity.Wdkp"></activity>
+        <activity android:name=".modules.my.activity.Ydgj"></activity>
+        <activity android:name=".modules.my.activity.Sqfp"></activity>
+        <activity android:name=".modules.my.activity.Wdss"></activity>
+        <activity android:name=".modules.my.activity.Tzbg"></activity>
+        <activity android:name=".modules.my.activity.Settings"></activity>
+        <activity android:name=".modules.my.activity.Aboutsports"></activity>
+        <activity android:name=".modules.my.activity.BeanDetail"></activity>
+        <activity android:name=".modules.my.activity.BeanShop"></activity>
+        <activity android:name=".modules.my.activity.My_Credits"></activity>
+        <activity android:name=".modules.event.activity.MyWebActivity"></activity>
+        <activity android:name=".modules.coach.activity.CoachDetailActivity"></activity>
+        <activity android:name=".modules.coach.activity.CourseDetailActivity"></activity>
+        <activity android:name=".modules.event.activity.EventDetailsActivity"></activity>
+        <activity android:name=".modules.event.activity.MyEventActivity"></activity>
+    </application>
+</manifest>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="96dp">
+    <ImageView
+        android:id="@+id/listview_image"
+        android:layout_margin="8dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/listview_name"
+       android:layout_toRightOf="@id/listview_image"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="名字"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/listview_type"
+        android:layout_toRightOf="@id/listview_image"
+        android:layout_below="@id/listview_name"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名字"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/listview_year"
+        android:layout_toRightOf="@id/listview_type"
+        android:layout_below="@id/listview_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名字"
+        android:textSize="12sp"
+        />
+    <RatingBar
+        style="@style/coachratingbar"
+        android:id="@+id/listview_ratingbar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:numStars="5"
+        android:layout_toRightOf="@id/listview_image"
+        android:layout_below="@id/listview_type"
+        android:layout_marginTop="4dp"
+        android:rating="5"
+        />
+    <TextView
+        android:id="@+id/listview_pingjia"
+        android:layout_toRightOf="@id/listview_ratingbar"
+        android:layout_alignBottom="@id/listview_ratingbar"
+        android:layout_marginLeft="10dp"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评价"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/listview_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"
+
+        android:text="课时"
+        android:textColor="#f00"
+        />
+
+
+</RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:id="@+id/second_linear">
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

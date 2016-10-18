@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FF6633">
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:layout_width="35dp"
+            android:src="@mipmap/back"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="忘记密码" />
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="#d2d2d2"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/forget_phonenum"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:paddingLeft="10dp"
+            android:hint="手机号码"/>
+        <LinearLayout
+            android:layout_below="@id/forget_phonenum"
+            android:id="@+id/ll_check"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0.5dp"
+            android:layout_height="40dp">
+            <EditText
+                android:id="@+id/forget_check"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:background="#fff"
+                android:hint="验证码"/>
+            <Button
+                android:id="@+id/forget_send"
+                android:layout_width="wrap_content"
+                android:background="@drawable/roundbutton"
+                android:text="发送验证码"
+                android:layout_marginRight="10dp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/forget_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:layout_marginTop="0.5dp"
+            android:password="true"
+            android:layout_below="@id/ll_check"
+            android:paddingLeft="10dp"
+            android:hint="密码"/>
+        <Button
+            android:id="@+id/forget_btnmodify"
+            android:layout_margin="20dp"
+            android:layout_below="@id/forget_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="修改密码"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@drawable/roundbutton"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_below="@id/forget_btnmodify"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="如果无法接受到验证码，请联系我们的客服"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="联系电话 :"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignBottom="@id/tv2"
+            android:layout_toRightOf="@id/tv2"
+            android:textColor="#FF6633"
+            android:layout_width="wrap_content"
+            android:text=" 400-921-6990"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

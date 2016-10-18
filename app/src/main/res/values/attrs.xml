@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopMenu">
+        <attr name="text_title" format="string" />
+        <attr name="img_left" format="reference" />
+        <attr name="img_right" format="reference" />
+    </declare-styleable>
+</resources>

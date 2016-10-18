@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2d2d2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fp_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#FF6633">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="积分商城"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fp_title"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/shop_jifen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="当前积分 : "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_shopcredits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="2dp"
+                android:text="0"
+                android:textColor="#FF6633"
+                android:layout_gravity="center_vertical"
+                 />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/shop_bean"
+            android:layout_height="60dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="当前运动豆 : "
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/tv_shopbean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="2dp"
+                android:text="0"
+                android:textColor="#FF6633"
+                android:layout_gravity="center_vertical"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@id/title2"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                //小模块1
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/bean_30"
+                        android:layout_margin="10dp"
+                        android:layout_width="170dp"
+                        android:background="@mipmap/mailbg"
+                        android:layout_height="170dp" >
+                        <TextView
+                            android:id="@+id/rmb_30"
+                            android:layout_width="wrap_content"
+                            android:text="30"
+                            android:textSize="22sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#FF6633"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_toLeftOf="@id/rmb_30"
+                            android:text="￥"
+                            android:layout_marginBottom="2dp"
+                            android:layout_alignBottom="@id/rmb_30"
+                            android:textColor="#FF6633"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="我要运动30运动豆"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/mailinearl"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="#FF6633"
+                            android:text="300"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                //小模块2
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/bean_50"
+                        android:layout_margin="10dp"
+                        android:layout_width="170dp"
+                        android:background="@mipmap/mailbg"
+                        android:layout_height="170dp" >
+                        <TextView
+                            android:id="@+id/rmb_50"
+                            android:layout_width="wrap_content"
+                            android:text="50"
+                            android:textSize="22sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#FF6633"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_toLeftOf="@id/rmb_50"
+                            android:text="￥"
+                            android:layout_marginBottom="2dp"
+                            android:layout_alignBottom="@id/rmb_50"
+                            android:textColor="#FF6633"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="我要运动50运动豆"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/mailinearl"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="#FF6633"
+                            android:text="490"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                //小模块3
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/bean_100"
+                        android:layout_margin="10dp"
+                        android:layout_width="170dp"
+                        android:background="@mipmap/mailbg"
+                        android:layout_height="170dp" >
+                        <TextView
+                            android:id="@+id/rmb_100"
+                            android:layout_width="wrap_content"
+                            android:text="100"
+                            android:textSize="22sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#FF6633"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_toLeftOf="@id/rmb_100"
+                            android:text="￥"
+                            android:layout_marginBottom="2dp"
+                            android:layout_alignBottom="@id/rmb_100"
+                            android:textColor="#FF6633"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="我要运动100运动豆"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/mailinearl"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="#FF6633"
+                            android:text="970"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                //小模块4
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/bean_200"
+                        android:layout_margin="10dp"
+                        android:layout_width="170dp"
+                        android:background="@mipmap/mailbg"
+                        android:layout_height="170dp" >
+                        <TextView
+                            android:id="@+id/rmb_200"
+                            android:layout_width="wrap_content"
+                            android:text="200"
+                            android:textSize="22sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#FF6633"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_toLeftOf="@id/rmb_200"
+                            android:text="￥"
+                            android:layout_marginBottom="2dp"
+                            android:layout_alignBottom="@id/rmb_200"
+                            android:textColor="#FF6633"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="我要运动200运动豆"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/mailinearl"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="#FF6633"
+                            android:text="1900"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

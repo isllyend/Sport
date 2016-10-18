@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#FF6633">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="菜单"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+
+            android:id="@+id/horizontal_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+
+                android:id="@+id/news_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontal_scroll"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:text="授课方式"
+                android:textColor="#666666"
+                android:textSize="16sp"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/down_gray" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:text="区域"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/down_gray" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:text="智能排序"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/down_gray" />
+        </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/radiogroup"
+
+        >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/coach_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:divider="#EEEEEE"
+            android:dividerHeight="10dp"
+
+            >
+
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <LinearLayout
+            android:id="@+id/faillinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@mipmap/defaultimage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="暂时没有数据哦"
+                android:textColor="#ff666666" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/coach_linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#E1E1E1"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="授课方式"
+                android:textColor="#666666"
+                android:textSize="16sp"
+
+                />
+
+            <ListView
+                android:id="@+id/my_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#fff"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+

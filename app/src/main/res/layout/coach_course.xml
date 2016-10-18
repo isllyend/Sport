@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FF6A46"
+        android:gravity="bottom"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_menu_back"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="课程详情"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            />
+
+
+    </LinearLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="98dp">
+                <ImageView
+                    android:id="@+id/ima"
+                    android:layout_margin="8dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/ic_launcher"
+                    />
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_toRightOf="@id/ima"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="名字"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/year"
+                    android:layout_toRightOf="@id/ima"
+                    android:layout_below="@id/name"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名字"
+                    android:textSize="12sp"
+                    />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                    android:id="@+id/coach_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="教练详情>"
+                    android:layout_marginRight="10dp"
+                        android:clickable="true"
+                    />
+
+        </LinearLayout>
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EEEEEE"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程名称"
+                android:textColor="#f00"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一对一"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EEEEEE"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程介绍"
+                android:textColor="#f00"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/course_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一对一"
+                />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EEEEEE"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="培训价格"
+                android:textColor="#f00"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/course_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一对一"
+                />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EEEEEE"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="培训地点"
+                android:textColor="#f00"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/course_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一对一"
+                />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EEEEEE"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="驻场场馆"
+                android:textColor="#f00"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/course_venue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一对一"
+                />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EEEEEE"
+                />
+            <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<HorizontalScrollView-->
+                    <!--android:scrollbars="none"-->
+                    <!--android:id="@+id/time_scrollview"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<RadioGroup-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:id="@+id/time_radiogroup"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<RadioButton-->
+                            <!--android:button="@null"-->
+                            <!--android:layout_width="86dp"-->
+                            <!--android:layout_height="56dp"-->
+                            <!--android:background="@drawable/my_time_background"-->
+                            <!--/>-->
+                        <!--<RadioButton-->
+                            <!--android:button="@null"-->
+                            <!--android:layout_width="86dp"-->
+                            <!--android:layout_height="56dp"-->
+                            <!--android:background="@drawable/my_time_background"-->
+                            <!--/>-->
+                        <!--<RadioButton-->
+                            <!--android:button="@null"-->
+                            <!--android:layout_width="86dp"-->
+                            <!--android:layout_height="56dp"-->
+                            <!--android:background="@drawable/my_time_background"-->
+                            <!--/>-->
+                        <!--<RadioButton-->
+                            <!--android:button="@null"-->
+                            <!--android:layout_width="86dp"-->
+                            <!--android:layout_height="56dp"-->
+                            <!--android:background="@drawable/my_time_background"-->
+                            <!--/>-->
+                        <!--<RadioButton-->
+                            <!--android:button="@null"-->
+                            <!--android:layout_width="86dp"-->
+                            <!--android:layout_height="56dp"-->
+                            <!--android:background="@drawable/my_time_background"-->
+                            <!--/>-->
+                        <!--<RadioButton-->
+                            <!--android:button="@null"-->
+                            <!--android:layout_width="86dp"-->
+                            <!--android:layout_height="56dp"-->
+                            <!--android:background="@drawable/my_time_background"-->
+                            <!--/>-->
+                        <!--<RadioButton-->
+                            <!--android:button="@null"-->
+                            <!--android:layout_width="86dp"-->
+                            <!--android:layout_height="56dp"-->
+                            <!--android:background="@drawable/my_time_background"-->
+                            <!--/>-->
+
+                    <!--</RadioGroup>-->
+
+
+                <!--</HorizontalScrollView>-->
+
+
+            <!--</LinearLayout>-->
+
+
+
+        </LinearLayout>
+
+</ScrollView>
+
+
+
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/text_yuyue"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="立即预约（￥0）"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="#FF6A46"
+        />
+</RelativeLayout>

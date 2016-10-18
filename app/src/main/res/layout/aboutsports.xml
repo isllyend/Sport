@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#FF6633">
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:layout_width="35dp"
+            android:src="@mipmap/back"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="关于我要运动" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="80dp"
+        android:src="@mipmap/logo"
+        android:layout_gravity="center"
+        android:layout_height="80dp" />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:text="v 2.6.2"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:background="#C0C0C0"
+        android:layout_height="0.3dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:text="        我要运动app，您的随身运动管家！专注于满足各种体育运动、健身减肥、找教练，订场馆等需求，致力于让希望参加羽毛球、篮球、足球、网球等各种球类运动赛事、找健身减肥教练、健身房的运动达人们有超级炫酷的运动体验，让天下没有难定的场馆，没有难约的教练！"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:text="        我要运动，我更健康，美好生活从运动开始！"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:background="#C0C0C0"
+        android:layout_height="0.3dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="微信公众号：yudingnet"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="微博搜索：我要运动APP"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="我要运动官网： www.1yd.me"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="官方QQ群：421197644"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="联系电话：4009216990"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="公司邮箱：support@1yd.me"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+</LinearLayout>

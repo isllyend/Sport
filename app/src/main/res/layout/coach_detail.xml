@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FF6A46"
+        android:gravity="bottom"
+        >
+        <ImageView
+            android:id="@+id/coach_back"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_menu_back"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="教练详情"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/coach_bg"
+            android:scaleType="fitXY"
+            />
+        <ImageView
+            android:id="@+id/icon_detail"
+            android:layout_alignParentBottom="true"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <ImageView
+            android:id="@+id/icon_gender"
+            android:layout_toRightOf="@id/icon_detail"
+            android:layout_alignTop="@id/icon_detail"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/ic_gender_female"
+
+            />
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_toRightOf="@id/icon_gender"
+            android:layout_alignTop="@id/icon_gender"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="姓名"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_gender"
+            android:layout_alignLeft="@id/icon_gender"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="网球|执教8年"
+            android:layout_marginTop="10dp"
+            android:id="@+id/detail_year"
+            />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/coach_radiogroup"
+        android:background="#FF6A46"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+
+        >
+        <RadioButton
+            android:id="@+id/coach_xiangqing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="教练详情"
+            android:gravity="center"
+            android:textColor="@color/radiobutton_text_color"
+
+            />
+        <RadioButton
+            android:id="@+id/coach_kecheng"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="教练课程"
+            android:gravity="center"
+            android:textColor="@color/radiobutton_text_color"
+            />
+        <RadioButton
+            android:id="@+id/coach_pingjia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="教练评价"
+            android:gravity="center"
+            android:textColor="@color/radiobutton_text_color"
+            />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/detail_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>
