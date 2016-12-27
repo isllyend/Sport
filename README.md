@@ -1,2 +1,2 @@
 # Sport
-This is my frist app.Good job!2016年12月27日14:46:36
+This is my frist app.Good job!2016年12月27日
